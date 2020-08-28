@@ -2,8 +2,8 @@
 
 [ext_resource path="res://src/Objects/black-floor.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/bedroom.png" type="Texture" id=2]
-[ext_resource path="res://assets/Bubble_zs.png" type="Texture" id=3]
-[ext_resource path="res://assets/Bubble_laptop.png" type="Texture" id=4]
+[ext_resource path="res://assets/Zs.png" type="Texture" id=3]
+[ext_resource path="res://assets/genericItem_color_050.png" type="Texture" id=4]
 
 [node name="Bedroom" type="Node2D"]
 position = Vector2( 512, 300 )
@@ -16,12 +16,12 @@ position = Vector2( 30.4105, 260 )
 position = Vector2( 2.17749, -2.96069 )
 texture = ExtResource( 2 )
 
-[node name="Bubble_laptop" type="Sprite" parent="."]
-position = Vector2( -112.443, 59.015 )
-scale = Vector2( 0.792578, 0.768871 )
+[node name="genericItem_color_050" type="Sprite" parent="."]
+position = Vector2( -118.208, 61.8976 )
+scale = Vector2( 0.591537, 0.615135 )
 texture = ExtResource( 4 )
 
-[node name="Bubble_zs" type="Sprite" parent="."]
-position = Vector2( 387.078, 114.391 )
-scale = Vector2( 0.691829, 0.67405 )
+[node name="Zs" type="Sprite" parent="."]
+position = Vector2( 392.312, 121.446 )
+scale = Vector2( 0.733314, 0.73924 )
 texture = ExtResource( 3 )
