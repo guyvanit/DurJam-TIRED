@@ -1,4 +1,4 @@
 extends ClickButton
 
 func on_click():
-	print("Start!")
+	print("Light Button")
