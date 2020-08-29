@@ -23,6 +23,10 @@ _global_script_class_icons={
 config/name="DurJam"
 config/icon="res://icon.png"
 
+[autoload]
+
+GlobalScript="*res://src/global_script.gd"
+
 [rendering]
 
 environment/default_environment="res://default_env.tres"

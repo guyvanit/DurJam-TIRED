@@ -1,19 +1,20 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://src/Bedroom/button_comp.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/bedroom.png" type="Texture" id=2]
 [ext_resource path="res://src/Bedroom/button_zs.tscn" type="PackedScene" id=3]
 [ext_resource path="res://assets/Bedroom_dark.png" type="Texture" id=4]
 [ext_resource path="res://src/Bedroom/button_light.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/Bedroom/Bedroom.gd" type="Script" id=6]
 
 [node name="Bedroom" type="Node2D"]
+script = ExtResource( 6 )
 
-[node name="bedroom" type="Sprite" parent="."]
+[node name="Bedroom_light" type="Sprite" parent="."]
 position = Vector2( 512.509, 300.074 )
 texture = ExtResource( 2 )
 
 [node name="Bedroom_dark" type="Sprite" parent="."]
-visible = false
 position = Vector2( 512.053, 298.253 )
 texture = ExtResource( 4 )
 
