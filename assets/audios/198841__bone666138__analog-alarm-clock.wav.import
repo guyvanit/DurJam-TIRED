@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/198841__bone666138__analog-alarm-clock.wav-b08c74045e6c9502aeb43302d1713524.sample"
+
+[deps]
+
+source_file="res://assets/audios/198841__bone666138__analog-alarm-clock.wav"
+dest_files=[ "res://.import/198841__bone666138__analog-alarm-clock.wav-b08c74045e6c9502aeb43302d1713524.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
