@@ -33,4 +33,3 @@ func _input(event):
 			audio.set_stream(scene.music)
 			audio.stop()
 			audio.play()
-		
