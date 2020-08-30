@@ -30,6 +30,9 @@ func _input(event):
 			# plays music audio instead
 			var audio = get_node("../OutsideAudio")
 			var scene = get_node("../../BusStop")
-			audio.set_stream(scene.music)
 			audio.stop()
-			audio.play()
+			
+			GlobalScript.audio.set_stream(scene.music)
+			GlobalScript.audio.play()
+			GlobalScript.headphone = true
+			

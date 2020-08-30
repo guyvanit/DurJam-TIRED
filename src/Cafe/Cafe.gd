@@ -1,5 +1,6 @@
 extends Node2D
 
 func _ready():
-	$CafeMusic.play()
-	$CafeAudio.play()
+	if not GlobalScript.headphone:
+		$CafeMusic.play()
+		$CafeAudio.play()
