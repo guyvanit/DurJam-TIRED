@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/398159__inspectorj__ambience-london-street-a.wav-0cf3274ed65811d007aec49f721996b2.sample"
+
+[deps]
+
+source_file="res://assets/audios/398159__inspectorj__ambience-london-street-a.wav"
+dest_files=[ "res://.import/398159__inspectorj__ambience-london-street-a.wav-0cf3274ed65811d007aec49f721996b2.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,11 +1,12 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
+[ext_resource path="res://assets/audios/398159__inspectorj__ambience-london-street-a.wav" type="AudioStream" id=1]
 [ext_resource path="res://assets/Bus_Stop.png" type="Texture" id=2]
 [ext_resource path="res://src/Outside/Button_BusTimes.gd" type="Script" id=3]
 [ext_resource path="res://src/Outside/Button_Flower.gd" type="Script" id=4]
 [ext_resource path="res://assets/Flower.png" type="Texture" id=5]
 [ext_resource path="res://src/Outside/Button_Person.gd" type="Script" id=6]
-[ext_resource path="res://assets/audios/music/William song 2.wav" type="AudioStream" id=7]
+[ext_resource path="res://src/Outside/BusStop.gd" type="Script" id=8]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 52.5998, 54.3959 )
@@ -19,6 +20,7 @@ radius = 35.3208
 height = 203.376
 
 [node name="Bus Stop" type="Node2D"]
+script = ExtResource( 8 )
 
 [node name="Scene" type="Sprite" parent="."]
 position = Vector2( 512.512, 299.834 )
@@ -84,6 +86,5 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="WillsMusic" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource( 7 )
-autoplay = true
+[node name="OutsideAudio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 1 )
