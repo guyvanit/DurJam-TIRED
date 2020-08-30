@@ -1,5 +1,7 @@
 extends Node2D
 
+var overslept = false
+
 func _ready():
 	
 	var dark = get_node("Bedroom_dark")
@@ -8,4 +10,4 @@ func _ready():
 		dark.hide()
 	else:
 		dark.show()
-		
+	

@@ -44,6 +44,17 @@ stream = ExtResource( 9 )
 [node name="Button_Zs" parent="." instance=ExtResource( 3 )]
 position = Vector2( 896.651, 421.142 )
 
+[node name="Label" type="Label" parent="Button_Zs"]
+margin_left = -204.0
+margin_top = -65.0
+margin_right = 108.0
+margin_bottom = -38.0
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="SceneArrow" type="Area2D" parent="."]
 position = Vector2( 66.7545, 402.803 )
 script = ExtResource( 11 )
