@@ -3,6 +3,7 @@ extends Node
 # global variables
 var bedroom_lights = false
 var audio_loop = false
+var has_flower = false
 
 # create audio node
 var audio = AudioStreamPlayer.new()

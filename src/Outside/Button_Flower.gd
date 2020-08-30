@@ -1,26 +1,15 @@
 extends ClickButton
 
-var counter = 1
-var interaction = false
+var counter = 0
+var text = [ \
+		"You notice a pretty flower...", \
+		"Maybe you should take it...", \
+		"(Press e to take the flower)" \
+	]
 
 func on_click():
-	$Label.show()
-	print(counter)
-	
-	# also replace this with array indexing later
-	if counter == 1:
-		$Label.text = "You notice a pretty flower..."
+	if counter < text.size():
+		$Label.text = text[counter]
 		counter += 1
-	elif counter == 2:
-		#$Label.text = "Press E if you wish to take it"
-		$Label.text = "Maybe you should take it..."
-		interaction = true
-		
-	print(interaction)
-	
-
-func _input(_event):
-	if Input.is_action_just_pressed('e') and interaction == true:
-			$Sprite.hide() 
-			print('Hidden')
-		
+	else:
+		$Label.hide()

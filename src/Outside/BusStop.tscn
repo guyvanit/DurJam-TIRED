@@ -19,10 +19,10 @@ height = 28.6406
 radius = 35.3208
 height = 203.376
 
-[node name="Bus Stop" type="Node2D"]
+[node name="BusStop" type="Node2D"]
 script = ExtResource( 8 )
 
-[node name="Scene" type="Sprite" parent="."]
+[node name="SceneSprite" type="Sprite" parent="."]
 position = Vector2( 512.512, 299.834 )
 texture = ExtResource( 2 )
 
@@ -57,12 +57,10 @@ texture = ExtResource( 5 )
 shape = SubResource( 2 )
 
 [node name="Label" type="Label" parent="Flower"]
-visible = false
 margin_left = -63.6218
 margin_top = -47.7617
 margin_right = 99.3782
 margin_bottom = -27.7617
-text = "You notice a pretty flower..."
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -76,10 +74,10 @@ position = Vector2( -3.62878, 23.9229 )
 shape = SubResource( 3 )
 
 [node name="Label" type="Label" parent="Person"]
-margin_left = -133.094
-margin_top = -127.044
-margin_right = -93.0941
-margin_bottom = -113.044
+margin_left = -134.842
+margin_top = -127.627
+margin_right = -94.842
+margin_bottom = -113.627
 align = 1
 valign = 1
 __meta__ = {
