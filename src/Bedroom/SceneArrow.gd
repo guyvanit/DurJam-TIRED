@@ -5,7 +5,11 @@ func on_click():
 	
 	# stop audio and end loop
 	GlobalScript.audio.stop()
-	GlobalScript.audio_loop = false
 	
 	# change scene to outside
-	get_tree().change_scene("res://src/Outside/BusStop.tscn")
+	var new_scene
+	if get_node("../../Bedroom").overslept:
+		new_scene = "res://src/Cafe/Cafe.tscn"
+	else:
+		new_scene = "res://src/Outside/BusStop.tscn"
+	get_tree().change_scene(new_scene)

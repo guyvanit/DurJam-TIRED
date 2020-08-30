@@ -20,4 +20,5 @@ func _input(event):
 		if Input.is_key_pressed(KEY_E):
 			$Label.text = text[3]
 			GlobalScript.has_flower = true
+			$Sprite.hide()
 			counter = text.size()
