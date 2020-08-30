@@ -8,4 +8,4 @@ func on_click():
 	GlobalScript.audio_loop = false
 	
 	# change scene to outside
-	
+	get_tree().change_scene("res://src/Outside/BusStop.tscn")

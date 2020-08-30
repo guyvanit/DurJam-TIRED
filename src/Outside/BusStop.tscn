@@ -1,0 +1,89 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://assets/Bus_Stop.png" type="Texture" id=2]
+[ext_resource path="res://src/Outside/Button_BusTimes.gd" type="Script" id=3]
+[ext_resource path="res://src/Outside/Button_Flower.gd" type="Script" id=4]
+[ext_resource path="res://assets/Flower.png" type="Texture" id=5]
+[ext_resource path="res://src/Outside/Button_Person.gd" type="Script" id=6]
+[ext_resource path="res://assets/audios/music/William song 2.wav" type="AudioStream" id=7]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 52.5998, 54.3959 )
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 16.478
+height = 28.6406
+
+[sub_resource type="CapsuleShape2D" id=3]
+radius = 35.3208
+height = 203.376
+
+[node name="Bus Stop" type="Node2D"]
+
+[node name="Scene" type="Sprite" parent="."]
+position = Vector2( 512.512, 299.834 )
+texture = ExtResource( 2 )
+
+[node name="Bus_Times" type="Area2D" parent="."]
+position = Vector2( 136.37, 204.061 )
+script = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bus_Times"]
+position = Vector2( -1.10185, -8.57565 )
+shape = SubResource( 1 )
+
+[node name="Label" type="Label" parent="Bus_Times"]
+visible = false
+margin_left = -83.0
+margin_top = -83.0
+margin_right = 124.0
+margin_bottom = -64.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Flower" type="Area2D" parent="."]
+position = Vector2( 903.898, 355.5 )
+script = ExtResource( 4 )
+
+[node name="Sprite" type="Sprite" parent="Flower"]
+texture = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Flower"]
+shape = SubResource( 2 )
+
+[node name="Label" type="Label" parent="Flower"]
+visible = false
+margin_left = -63.6218
+margin_top = -47.7617
+margin_right = 99.3782
+margin_bottom = -27.7617
+text = "You notice a pretty flower..."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Person" type="Area2D" parent="."]
+position = Vector2( 552.818, 320.722 )
+script = ExtResource( 6 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Person"]
+position = Vector2( -3.62878, 23.9229 )
+shape = SubResource( 3 )
+
+[node name="Label" type="Label" parent="Person"]
+margin_left = -133.094
+margin_top = -127.044
+margin_right = -93.0941
+margin_bottom = -113.044
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 7 )
+autoplay = true
