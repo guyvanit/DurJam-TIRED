@@ -2,6 +2,9 @@ extends ClickButton
 
 var counter = 1
 
+func _ready():
+	$Label.add_color_override("font_color", Color(1,1,1,1))
+
 func on_click():
 	$Label.show()
 	print(counter)
