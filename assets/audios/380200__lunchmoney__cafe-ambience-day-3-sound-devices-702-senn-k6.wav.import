@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/380200__lunchmoney__cafe-ambience-day-3-sound-devices-702-senn-k6.wav-771c288e63a958b6ccfd924fb0dbfe6d.sample"
+
+[deps]
+
+source_file="res://assets/audios/380200__lunchmoney__cafe-ambience-day-3-sound-devices-702-senn-k6.wav"
+dest_files=[ "res://.import/380200__lunchmoney__cafe-ambience-day-3-sound-devices-702-senn-k6.wav-771c288e63a958b6ccfd924fb0dbfe6d.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0

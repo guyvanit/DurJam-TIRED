@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://assets/audios/398159__inspectorj__ambience-london-street-a.wav" type="AudioStream" id=1]
 [ext_resource path="res://assets/Bus_Stop.png" type="Texture" id=2]
@@ -6,7 +6,9 @@
 [ext_resource path="res://src/Outside/Button_Flower.gd" type="Script" id=4]
 [ext_resource path="res://assets/Flower.png" type="Texture" id=5]
 [ext_resource path="res://src/Outside/Button_Person.gd" type="Script" id=6]
+[ext_resource path="res://assets/Arrow.png" type="Texture" id=7]
 [ext_resource path="res://src/Outside/BusStop.gd" type="Script" id=8]
+[ext_resource path="res://src/Outside/SceneArrow.gd" type="Script" id=9]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 52.5998, 54.3959 )
@@ -18,6 +20,9 @@ height = 28.6406
 [sub_resource type="CapsuleShape2D" id=3]
 radius = 35.3208
 height = 203.376
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 32.8188, 22.1842 )
 
 [node name="BusStop" type="Node2D"]
 script = ExtResource( 8 )
@@ -86,3 +91,17 @@ __meta__ = {
 
 [node name="OutsideAudio" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 1 )
+
+[node name="SceneArrow" type="Area2D" parent="."]
+position = Vector2( 976.445, 410.154 )
+script = ExtResource( 9 )
+
+[node name="Sprite" type="Sprite" parent="SceneArrow"]
+position = Vector2( 2.3746, 0.294609 )
+rotation = -3.14393
+scale = Vector2( 1, 0.704094 )
+texture = ExtResource( 7 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SceneArrow"]
+position = Vector2( 8.73907, -4.07824 )
+shape = SubResource( 4 )

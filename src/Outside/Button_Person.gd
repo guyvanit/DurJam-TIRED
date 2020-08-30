@@ -32,5 +32,5 @@ func _input(event):
 			var scene = get_node("../../BusStop")
 			audio.set_stream(scene.music)
 			audio.stop()
-			scene.play_audio()
+			audio.play()
 		
