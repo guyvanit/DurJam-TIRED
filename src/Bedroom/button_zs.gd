@@ -5,8 +5,8 @@ var text = [ \
 		"You already slept 20 hours last night...", \
 		"You are also late for your lectures (again)...", \
 		"Maybe you should actually try to go this time...", \
-		"(Press E to go to sleep, Don't otherwise)", \
-		"You slept past all your lectures...", \
+		"(Press E to go back to sleep)", \
+		"You slept past all your lectures (again)...", \
 		"At least now you won't have to worry about facing your classmates...", \
 		"You feel relieved..."
 	]
