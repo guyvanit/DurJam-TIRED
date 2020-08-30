@@ -13,11 +13,13 @@ func on_click():
 		counter += 1
 	elif counter == 2:
 		#$Label.text = "Press E if you wish to take it"
+		$Label.text = "Maybe you should take it..."
 		interaction = true
 		
 	print(interaction)
-		
-func _input(event):
+	
+
+func _input(_event):
 	if Input.is_action_just_pressed('e') and interaction == true:
 			$Sprite.hide() 
 			print('Hidden')

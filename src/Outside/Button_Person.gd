@@ -11,11 +11,11 @@ func on_click():
 		counter += 1
 	elif counter == 2:
 		#$Label.text = "Do you wish to talk to them or listen to music? "
-		Label.text = "Should I try to talk to her...?"
+		$Label.text = "Should you try to talk to her...?"
 		counter += 1
-	elif counter == 3:
+	#elif counter == 3:
 		#$Label.text = "Press 1 or 2"
-		counter += 1
+		#counter += 1
 	else:
 		$Label.hide() 
 		
