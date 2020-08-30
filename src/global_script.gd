@@ -21,13 +21,14 @@ func _ready():
 	bird.set("loop", true)
 	
 func play_audio_next(next, next_loop):
+	audio_loop = true
+	
 	audio.play()
 	yield(audio, "finished")
 	audio.set_stream(next)
 	
 	# if next_loop true, loop next audio
 	if next_loop:
-		audio_loop = true
 		
 		# loops audio until audio_loop set to false
 		while audio_loop:
@@ -35,4 +36,5 @@ func play_audio_next(next, next_loop):
 			yield(audio, "finished")
 			if(not audio_loop):
 				break
-	
+
+	audio_loop = false
