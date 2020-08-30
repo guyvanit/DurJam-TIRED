@@ -11,15 +11,15 @@
 script = ExtResource( 6 )
 
 [node name="Bedroom_light" type="Sprite" parent="."]
-position = Vector2( 512.509, 300.074 )
+position = Vector2( 512, 300 )
 texture = ExtResource( 2 )
 
 [node name="Bedroom_dark" type="Sprite" parent="."]
-position = Vector2( 512.053, 298.253 )
+position = Vector2( 512, 300 )
 texture = ExtResource( 4 )
 
 [node name="Button_Light" parent="." instance=ExtResource( 5 )]
-position = Vector2( 214.996, 117.409 )
+position = Vector2( 215.755, 222.092 )
 
 [node name="Button_Comp" parent="." instance=ExtResource( 1 )]
 position = Vector2( 406.308, 363.794 )
